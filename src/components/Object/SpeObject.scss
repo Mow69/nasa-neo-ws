@@ -1,0 +1,125 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+.weather-card {
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -ms-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-ms-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@-o-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.forecast-item {
+  min-width: 210px;
+
+  @include media-breakpoint-up(lg) {
+    min-width: auto;
+    max-width: 150px;
+  }
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+#root {
+  height: 100%;
+}
+
+.bg-stars {
+  height: 100%;
+  background: url("https://source.unsplash.com/1600x900/?stars,space,meteor") top center no-repeat;
+  //border-radius: 10% 10% 10% 10%;
+
+}
+
+.bg-primary {
+  background: white !important;
+  background-image: url("https://source.unsplash.com/1600x900/?stars,space,meteor") !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .bg-primary, .bg-stars {
+    background-size: auto 100%;
+  }
+}
+
+
+@media screen and (min-width: 1600px) {
+  .bg-primary, .bg-stars {
+    width: 100%!important;
+  }
+  body {
+    //background: #282c34;
+    //background: linear-gradient(to bottom, #333, #333 50%, #eee 75%, #333 75%);
+
+    background: linear-gradient(to bottom right, #333, #333 35%, #D65 62%, #333 75%);
+
+  }
+  div.jumbotron {
+    max-width: 90%!important;
+        //position: center;
+  }
+}
+
+//@media screen and (max-width: 900px) {
+//  .bg-primary, .bg-stars {
+//    width: 90%!important;
+//  }
+//}
+//
+//@media screen and (max-width: 600px) {
+//  .bg-primary, .bg-stars {
+//    width: 90%!important;
+//  }
+//}
+
+.container-fluid {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+label {
+  color: aliceblue;
+}
+
+
+div.jumbotron {
+  background: rgb(2,0,36);
+  //background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(1,184,221,1) 40%, rgba(175,3,3,1) 98%);
+ //background: linear-gradient()("/public/img/banter-snaps-5CPIzjWzGxo-unsplash.jpg") !important;
+  background: linear-gradient(160deg, #020024 22%, #01b8dd 116%, #af0303 134%);
+  color: aliceblue;
+}
+
+
+
+
