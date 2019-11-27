@@ -54,6 +54,11 @@ body {
   height: 100%;
 }
 
+.uk-navbar-item {
+  background: url("https://source.unsplash.com/1600x900/?stars,space,meteor") top center no-repeat;
+
+}
+
 .bg-stars {
   height: 100%;
   background: url("https://source.unsplash.com/1600x900/?stars,space,meteor") top center no-repeat;
@@ -62,14 +67,35 @@ body {
 }
 
 .bg-primary {
-  background: white !important;
-  background-image: url("https://source.unsplash.com/1600x900/?stars,space,meteor") !important;
+  background: inherit !important;
+}
+
+.header-nasa-meteor {
+
+}
+
+//.bg-primary:not(.container-fluid) {
+//  background: inherit !important;
+//  background-image: url("https://source.unsplash.com/1600x900/?stars,space,meteor") !important;
+//}
+//
+//.container-fluid {
+//  background:  !important;
+//  background-image: none;
+//}
+
+@media screen and (max-width: 450px) {
+  .input-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 1200px) {
   .bg-primary, .bg-stars {
     background-size: auto 100%;
   }
+
 }
 
 
@@ -77,13 +103,14 @@ body {
   .bg-primary, .bg-stars {
     width: 100%!important;
   }
-  body {
+  body, .header-nasa-meteor {
     //background: #282c34;
     //background: linear-gradient(to bottom, #333, #333 50%, #eee 75%, #333 75%);
 
     background: linear-gradient(to bottom right, #333, #333 35%, #D65 62%, #333 75%);
 
   }
+
   div.jumbotron {
     max-width: 90%!important;
         //position: center;
@@ -107,6 +134,11 @@ body {
   margin-right: 0;
 }
 
+.uk-navbar-center {
+  background: url("https://source.unsplash.com/1600x900/?stars,space,meteor") top center no-repeat;
+
+}
+
 label {
   color: aliceblue;
 }
@@ -123,6 +155,30 @@ div.jumbotron {
 // pour le centrer
 .uk-navbar-center {
   display: inherit;
+}
+
+.input-container {
+  display: flex;
+  //flex-direction: row;
+  align-items: center;
+}
+
+.uk-container {
+  color: aliceblue;
+  text-shadow: #282c34 1px 1px;
+
+  display: flex;
+  //flex-direction: column;
+  //align-items: center;
+
+}
+.uk-input {
+  border-radius: 10px 10px 10px 10px;
+
+}
+
+.input-content {
+  display: flex;
 }
 
 

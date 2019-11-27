@@ -56,28 +56,33 @@ const NeoWsContainer = () => {
 
   return (
       <div className="uk-container">
-        <NeoWsError error={error} />
+        <div className="input-container">
+          <NeoWsError error={error} />
 
-        <div>
-          Date de début :
-          <DatePicker
-              dateFormat="dd/MM/yyyy"
-              selected={startDate}
-              className="uk-input"
-              onChange={date => setStartDate(date)}
-              // ici onChange est équivalent à :
-              // onChange={function(date) {
-              //    setStartDate(date);
-              // }}
-          />
-          Date de fin :
-          <DatePicker
-              dateFormat="dd/MM/yyyy"
-              selected={endDate}
-              className="uk-input"
-              onChange={date => setEndDate(date)}
-          />
+          <div className="input-content">
+            <p>Date de début : </p>
+            <DatePicker
+                dateFormat="dd/MM/yyyy"
+                selected={startDate}
+                className="uk-input"
+                onChange={date => setStartDate(date)}
+                // ici onChange est équivalent à :
+                // onChange={function(date) {
+                //    setStartDate(date);
+                // }}
+            />
+            <br />
+            <br />
+            <p>Date de fin : </p>
+            <DatePicker
+                dateFormat="dd/MM/yyyy"
+                selected={endDate}
+                className="uk-input"
+                onChange={date => setEndDate(date)}
+            />
+          </div>
         </div>
+
       </div>
   );
 };
