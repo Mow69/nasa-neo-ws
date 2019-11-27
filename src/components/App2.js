@@ -6,7 +6,7 @@ import NotFound from "./NotFound";
 import Forecast from "./Object/SpeObject";
 import "../components/Object/SpeObject.scss"
 
-class App0 extends Component {
+class App2 extends Component {
     render = () => {
         return (
             <>
@@ -23,7 +23,6 @@ class App0 extends Component {
                 <div className="mt-4"></div>
             </>
         );
-    };
-}
+    };}
 
-export default App0;
+export default App2;

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../img/NASA-logo.png'
+import logo from '../components/img/NASA-logo.png'
 
 const Nav = () => (
   <nav className="uk-navbar-container uk-margin" uk-navbar="true">
