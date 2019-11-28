@@ -1,0 +1,36 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+}
+
+body {
+  background: url("https://source.unsplash.com/1600x900/?stars,space,meteor") top center no-repeat;
+  background-size: cover;
+}
+
+
+#root {
+  height: 100%;
+}
+
+.uk-input, .uk-button-primary {
+  border-radius: 10px 10px 10px 10px;
+
+}
+
+//@media screen and (min-width: 1600px) {
+//  body, .uk-navbar-container:not(.uk-navbar-transparent) {
+//    background: url("https://source.unsplash.com/1600x900/?stars,space,meteor") top center no-repeat;
+//    body img, .uk-navbar-container:not(.uk-navbar-transparent) img {
+//      background-size: cover;
+//    }
+//  }
+//}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: none;
+}
+
+
